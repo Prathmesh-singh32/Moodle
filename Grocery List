@@ -1,0 +1,19 @@
+print('''\n\n\n     Hello!! User 
+  **Welcome to the Grocery store**
+  !!!We are the best in the town!!!  ''')
+i = 1;
+sum = 0;
+while( i <= 3 ):
+
+    print("\n\n")
+    a = int( input("Enter the price of the of " + str(i) + " item : ") )
+    sum += a
+    i += 1
+
+if ( sum > 50 ):
+  print("\n\n Congratulations!! You have done shopping of more than 50$ " )
+  print(" In order to celebrate your shopping experience we are giving you a discount of 10% !!!")
+  print(" This brings your total to {}".format( sum - 0.1*sum ) )
+else :
+  print("\n\n Your total sums up to {} dollars".format(sum ) )
+print("\n\n Happy Shopping!!")
